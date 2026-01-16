@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTM112 Challenge Labs</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f9f9f9; padding: 20px; color: #333; }
+        h1, h2 { color: #012456; }
+        .copy-container { margin: 10px 0; display: flex; align-items: center; gap: 10px; }
+        .copy-input {
+            flex-grow: 1; padding: 5px; font-family: monospace;
+            font-size: 1rem; border: 1px solid #ccc; border-radius: 5px; background-color: #f4f4f4;
+        }
+        .copy-button {
+            padding: 5px 10px; background-color: #012456; color: white;
+            border: none; border-radius: 5px; cursor: pointer;
+        }
+        .copy-button:hover { background-color: #0142a3; }
+        .lab-section { display: none; margin-top: 20px; padding: 10px; background: white; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .lab-section.active { display: block; }
+        img { display: block; margin-top: 10px; max-width: 80%; height: auto; border: 1px solid #ccc; border-radius: 4px; }
+        .header {background-color: #012456; color: white; text-align: center; padding: 15px 0; margin-bottom: 40px; border-radius: 8px;}
+        .header h1 {color: white;}
+        .footer {background-color: #012456; color: white; text-align: center;padding: 15px 0;margin-top: 40px; }
+    </style>
+</head>
+<body>
+    <header class="header"><h1>HTM112 Challenge Labs</h1></header>
+    <label for="labFilter"><strong>Select Lab:</strong></label>
+    <select id="labFilter" onchange="filterLabs()">
+        <option value="">----Select----</option>
+<option value="User Guide" selected>User Guide</option>
+    </select>
+<section class="lab-section active" data-lab="User Guide">
+<h2> HTM112 Challenge Lab Files1</h2>
+<ol>
+    <li>Challenge Lab: Subnetting Files: <br>
+        <a href="2506-htm112-challenge-subnetting.pdf" download>Download Subnetting Instructions</a><br>
+        <a href="2506-htm112-challenge-subnetting.pkt" download>Download Subnetting Packet Tracer File</a><br><br> 
+    </li>
+    <li>Challenge Lab: VLANS Files: <br>
+        <a href="2506-htm112-challenge-vlans.pdf" download>Download VLANS Instructions</a><br>
+        <a href="2506-htm112-challenge-vlans.pkt" download>Download VLANS Packet Tracer File</a>
+    </li>
+</ol>
+</section>
